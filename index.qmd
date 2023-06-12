@@ -1,0 +1,58 @@
+---
+title: "Reproducible workflows"
+subtitle: "...with R Markdown, Quarto"
+author: "Rick Gilmore"
+format: 
+  revealjs:
+    theme: simple
+    # beige, blood, dark, default, league, moon, night, serif, simple, sky, solarized
+---
+
+# Motivation
+
+## {background-image="img/OneRingtoRuleThemAll-6x4.jpg"}
+
+---
+
+- One *tool*
+- Transparent, reproducible, version-controlled
+- Many outputs...
+
+## Examples
+
+- Web-based research protocol
+- Project site
+- Data wrangling, visualization
+- Presentations
+- Handouts
+- Manuscripts
+- HTML, PDF, DOCX, PPT, etc.
+
+## DRY WIT
+
+- Don't repeat yourself
+- Write it down
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+# Under the hood
+
+## Quarto
+
+This talk was prepared using Quarto.
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## GitHub
+
+The files are rendered into a web site that is hosted on GitHub <https://github.com>.
+
+GitHub is a web service for sharing computer code. It has a "pages" feature that also allows the (free) hosting of simple websites.
+
+GitHub supports `git`, a computer program used to put documents under version control.
