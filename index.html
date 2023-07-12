@@ -11,6 +11,7 @@
   <meta name="generator" content="quarto-1.3.353">
 
   <meta name="author" content="Rick Gilmore">
+  <meta name="author" content="Jennifer Valcin">
   <title>Reproducible workflows</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -333,7 +334,18 @@
 <div class="quarto-title-author-name">
 Rick Gilmore 
 </div>
+        <p class="quarto-title-affiliation">
+            Psychology/CSC
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Jennifer Valcin 
 </div>
+        <p class="quarto-title-affiliation">
+            PSU Libraries
+          </p>
+    </div>
 </div>
 
 </section>
@@ -342,7 +354,7 @@ Rick Gilmore
 <h1>Motivation</h1>
 
 </section>
-<section id="section" class="slide level2" data-background-image="img/OneRingtoRuleThemAll-6x4.jpg">
+<section id="section" class="slide level2" data-background-image="img/OneRingtoRuleThemAll-6x4.jpg" data-background-size="contain">
 <h2></h2>
 </section>
 <section class="slide level2">
@@ -352,38 +364,50 @@ Rick Gilmore
 <li>Transparent, reproducible, version-controlled</li>
 <li>Many outputs…</li>
 </ul>
-</section>
-<section id="examples" class="slide level2">
-<h2>Examples</h2>
+</section></section>
+<section id="examples" class="title-slide slide level1 center">
+<h1>Examples</h1>
 <ul>
 <li>Web-based research protocol</li>
-<li>Project site</li>
+<li>Project web site</li>
 <li>Data wrangling, visualization</li>
 <li>Presentations</li>
 <li>Handouts</li>
 <li>Manuscripts</li>
-<li>HTML, PDF, DOCX, PPT, etc.</li>
+<li>HTML, PDF, DOCX, PPT, etc</li>
 </ul>
+</section>
+
+<section id="background" class="title-slide slide level1 center">
+<h1>Background</h1>
+<ul>
+<li>What is R Markdown?</li>
+<li>What is Quarto?</li>
+<li>Scriptable data analyses/workflows
+<ul>
+<li>R</li>
+<li>SPSS syntax</li>
+<li>vs.&nbsp;point and click</li>
+</ul></li>
+<li>Tools to share analyses, other information alongside research (open science/sharing tool)</li>
+</ul>
+</section>
+
+<section>
+<section id="words-to-live-by" class="title-slide slide level1 center">
+<h1>Words to live by</h1>
+
 </section>
 <section id="dry-wit" class="slide level2">
 <h2>DRY WIT</h2>
 <ul>
 <li>Don’t repeat yourself</li>
-<li>Write it down</li>
+<li><strong>W</strong>rite <strong>i</strong>t <strong>d</strong>own</li>
 </ul>
-</section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
 </section></section>
 <section>
-<section id="under-the-hood" class="title-slide slide level1 center">
-<h1>Under the hood</h1>
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
 
 </section>
 <section id="quarto" class="slide level2">
@@ -611,44 +635,6 @@ Rick Gilmore
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

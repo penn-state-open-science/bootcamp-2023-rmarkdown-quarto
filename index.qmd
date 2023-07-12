@@ -1,7 +1,8 @@
 ---
 title: "Reproducible workflows"
 subtitle: "...with R Markdown, Quarto"
-author: "Rick Gilmore"
+author: ["Rick Gilmore", "Jennifer Valcin"]
+institute: ["Psychology/CSC", "PSU Libraries"]
 format: 
   revealjs:
     theme: simple
@@ -10,7 +11,7 @@ format:
 
 # Motivation
 
-## {background-image="img/OneRingtoRuleThemAll-6x4.jpg"}
+## {background-image="img/OneRingtoRuleThemAll-6x4.jpg" background-size="contain"}
 
 ---
 
@@ -18,7 +19,7 @@ format:
 - Transparent, reproducible, version-controlled
 - Many outputs...
 
-## Examples
+# Examples
 
 - Web-based research protocol
 - Project web site
@@ -26,14 +27,26 @@ format:
 - Presentations
 - Handouts
 - Manuscripts
-- HTML, PDF, DOCX, PPT, etc.
+- HTML, PDF, DOCX, PPT, etc
+
+# Background
+
+- What is R Markdown?
+- What is Quarto?
+- Scriptable data analyses/workflows
+    - R
+    - SPSS syntax
+    - vs. point and click
+- Tools to share analyses, other information alongside research (open science/sharing tool)
+
+# Words to live by
 
 ## DRY WIT
 
 - Don't repeat yourself
-- Write it down
+- **W**rite **i**t **d**own
 
-# Under the hood
+# Resources
 
 ## Quarto
 
