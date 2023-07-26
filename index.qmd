@@ -46,7 +46,119 @@ format:
 - Don't repeat yourself
 - **W**rite **i**t **d**own
 
+# Understanding R Markdown
+
+## What is R Markdown?
+  -  R Markdown is a file format for making dynamic documents using R. An R Markdown document is written in markdown (an plain text format) and contains chunks of embedded R code
+  - Explicitly links your data with your code and output creating a fully reproducible workflow
+  
+## Why use R Markdown?
+1. Reproducible Research
+2. Data Analysis and Reporting
+3. Scientific Reports and Papers
+4. Presentations
+5. Dashboards and Websites
+6. Books and Manuals
+7. Automated Reporting
+8. Academic Notebooks
+9. Interactive Data Exploration
+
+  
+## Benefits of using R Markdown for Open Science
+
+  - Seamless integration of data analysis and reporting
+  - Dynamic documents for real-time updates
+  - Wide variety of output formats (HTML, PDF, Word, etc.)
+  - Version control and collaboration with Git/GitHub
+  - Enhances both research transparency and efficiency
+
+## Reproducible Data Analysis with R Markdown
+
+  - Project structure and file organization
+  - Managing data and code files
+  - Demonstrating reproducibility in R Markdown steps
+  - Rerunning code chunks and regenerating outputs
+  - Utilizing R package checkpoints for consistent environments
+
+
+## Visualizations and Results Reporting
+
+  - Create interactive and static visualizations
+  - Utilize popular R packages for data visualization
+  - Incorporate interactive plots using Shiny and other tools
+  - Customize and styling output documents
+  - Themes and templates for consistent branding
+  - Control layout and appearance of the final report
+
+## Collaboration and Sharing in Open Science
+  - Public accessibility and transparency of scientific communication
+  - Web-based tools facilitate scientific collaboration
+  - Using Git/GitHub for version control
+  - Creating and cloning repositories
+  - Collaborating with colleagues in a shared repository
+  - Sharing R Markdown reports with the community
+
+# Scriptable Data Analyses/Workflows vs. "Point and Click"
+
+## Benefit of using coding languages like R
+- **Reproducibility**
+  - Code-based workflows allow for easy replication and sharing of analyses.
+  - Results can be reproduced precisely, ensuring transparency and accountability.
+
+- **Flexibility and Customization**
+  - Coding languages offer more control over data manipulation, analysis, and visualization.
+  - Users can create custom functions and packages tailored to their specific needs.
+
+## Benefit of using coding languages like R
+- **Automation and Efficiency**
+  - Automate repetitive tasks and streamline data analysis pipelines.
+  - Batch processing and scripting enable efficient handling of large datasets.
+
+- **Integration with Open Science Practices**
+  - R facilitates reproducible research with tools like R Markdown and version control.
+  - Supports data sharing, collaboration, and open-source development.
+
+## Benefit of using coding languages like R
+- **Cost and Accessibility**
+  - R is open-source and free to use, making it accessible to researchers and students worldwide.
+  - Reduces the need for expensive software licenses.
+
+- **Continuous Development and Innovation**
+  - Coding languages continuously evolve with new features and improvements.
+  - Users can leverage cutting-edge statistical methods and techniques.
+  
+
+## Benefit of using coding languages like R
+- **Scalability**
+  - Coding languages can handle larger datasets and more complex analyses.
+  - Ideal for research with growing data requirements.
+
+- **Data Privacy and Security**
+  - Local data processing in coding languages offers more control over data security.
+  - Especially relevant for sensitive or confidential data.
+
+## Challenges in Reproducibility with Point and Click Programs
+
+  - Often hides certain data manipulation steps performed in the background.
+  - Users may overlook or forget to document these steps, leading to non-reproducible results.
+  - Sharing analyses with others can be challenging.
+  - Recipients may not have access to the same version or settings, causing discrepancies.
+  - Inadequate tracking of changes with no version control, decreasing transparency and reproducibility.
+  
+## Challenges in Reproducibility with Point and Click Programs
+  - Manual Data Manipulation is prone to human error.
+  - Limited scripting capabilities.
+  - Vendor Lock-In ($$$!) and dependency on the software's availability and updates.
+  - Outputs lack visibility into the underlying code and calculations.
+  - Difficult to assess the validity of results without access to the analysis steps.
+  - Large-Scale Projects present a challenge.
+  - Difficult to maintain consistency and reproducibility over time.
+
+
+
+
 # Resources
+[The Definitive Guide to R Markdown](https://bookdown.org/yihui/rmarkdown/)
 
 ## Quarto
 
