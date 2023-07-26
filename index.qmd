@@ -3,6 +3,8 @@ title: "Reproducible workflows"
 subtitle: "...with R Markdown, Quarto"
 author: ["Rick Gilmore", "Jennifer Valcin"]
 institute: ["Psychology/CSC", "PSU Libraries"]
+bibliography: bib/refs.bib
+csl: bib/apa.csl
 format: 
   revealjs:
     theme: simple
@@ -10,6 +12,31 @@ format:
 ---
 
 # Motivation
+
+---
+
+![](https://upstarthr.com/wp-content/uploads/2011/06/hit-by-bus.jpg){fig-align="center"}
+
+## What's your project's bus number?
+
+- Could a colleague regenerate/reproduce your work?
+- *Methods reproducibility* [@Goodman2016-fi]
+    - Precursor to/prerequisite for other kinds of reproducibility^[i.e., *replication*]
+
+## DRY WIT
+
+- **D**on't **R**epeat **Y**ourself
+    - Script/automate
+    - Use functions
+- **W**rite **I**t **D**own
+    - It = what you did and how
+    - In a form someone else can make use of
+
+::: {.aside}
+
+Your time and others' is valuable.
+
+:::
 
 ## {background-image="img/OneRingtoRuleThemAll-6x4.jpg" background-size="contain"}
 
@@ -21,38 +48,115 @@ format:
 
 # Examples
 
-- Web-based research protocol
-- Project web site
-- Data wrangling, visualization
-- Presentations
-- Handouts
-- Manuscripts
-- HTML, PDF, DOCX, PPT, etc
 
 # Background
 
-- What is R Markdown?
-- What is Quarto?
-- Scriptable data analyses/workflows
-    - R
-    - SPSS syntax
-    - vs. point and click
-- Tools to share analyses, other information alongside research (open science/sharing tool)
+## What is R Markdown?
 
-# Words to live by
+- R Markdown [@allaire_et_al; @xie_allaire_grolemund; @xie_dervieux_riederer]
+- Suite of R [@r-lang] packages that support "literate programming" [@Knuth1984-ot]
 
-## DRY WIT
+---
 
-- Don't repeat yourself
-- **W**rite **i**t **d**own
+:::: {.columns}
+
+::: {.column width="40%"}
+
+![Donald Knuth [@Roberts2018-rz]](https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH1/merlin_148126767_cd44bb13-bc4d-4eeb-b1b7-73cc4dc174e7-superJumbo.jpg?quality=75&auto=webp)
+
+:::
+
+::: {.column width="60%"}
+
+> Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained...
+
+[@knuth_undated-mi]
+
+:::
+
+::::
+
+---
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+![Donald Knuth [@Roberts2018-rz]](https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH1/merlin_148126767_cd44bb13-bc4d-4eeb-b1b7-73cc4dc174e7-superJumbo.jpg?quality=75&auto=webp)
+
+:::
+
+::: {.column width="60%"}
+
+> ...and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.
+
+[@knuth_undated-mi]
+
+:::
+
+::::
+
+## Don't worry
+
+::: {.incremental}
+
+- You don't have to be a programmer, or a good programmer, to use these tools!
+
+- But using them will probably inspire you to become a programmer or a better one.
+
+- And you don't have to use R. The tools support other languages^[bash, JavaScript, mysql, octave, ruby, sas, stata, fortran, python, etc.].
+
+- "*The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.*" [@knuth_undated-mi]
+
+:::
+
+## {background-iframe="https://quarto.org/"}
+
+## Scripted data analyses/workflows
+
+- vs. point and click
+- Points and clicks can be hard to reproduce
+    - SPSS graphic user interface (GUI) vs. syntax
+- Computers do *exactly* what you tell them to do...
+    - if you speak their language
+    
+## [Markdown](https://www.markdownguide.org)
+
+- Write human-readable text documents
+    - Words, images, videos, web links
+- Convert to computer-readable documents (.html, .pdf, .docx, .pptx)
+- [R Markdown](https://rmarkdown.rstudio.com) adds *executable computer code*
+
+##
+
+# Case studies
+
+## Electronic notebook
+
+## Research protocol
+
+## Data cleaning/wrangling report
+
+## Presentation
+
+## Project website
+
+## Books
+
+# Next steps
 
 # Resources
 
 ## Quarto
 
-This talk was prepared using Quarto.
+This talk was prepared using [Quarto](https://quarto.org).
+Quarto enables you to weave together content and executable code into a finished presentation. 
+To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+## RStudio
+
+[RStudio](https://posit.co/products/open-source/rstudio/) is an integrated development environment (IDE) for R and Python.  
+It is a free and open source software program provided by [Posit](https://posit.co).
 
 ## GitHub
 
@@ -61,3 +165,6 @@ The files are rendered into a web site that is hosted on GitHub <https://github.
 GitHub is a web service for sharing computer code. It has a "pages" feature that also allows the (free) hosting of simple websites.
 
 GitHub supports `git`, a computer program used to put documents under version control.
+
+## References
+
