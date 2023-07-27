@@ -24,6 +24,25 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -333,6 +352,38 @@
 <h1>Motivation</h1>
 
 </section>
+<section class="slide level2">
+
+
+<img data-src="https://upstarthr.com/wp-content/uploads/2011/06/hit-by-bus.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="whats-your-projects-bus-number" class="slide level2">
+<h2>What’s your project’s bus number?</h2>
+<ul>
+<li>Could a colleague regenerate/reproduce your work?</li>
+<li><em>Methods reproducibility</em> <span class="citation" data-cites="Goodman2016-fi">(<a href="#/ref-Goodman2016-fi" role="doc-biblioref" onclick="return false;">Goodman, Fanelli, &amp; Ioannidis, 2016</a>)</span>
+<ul>
+<li>Precursor to/prerequisite for other kinds of reproducibility<sup>1</sup></li>
+</ul></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>i.e., <em>replication</em></p></li></ol></aside></section>
+<section id="dry-wit" class="slide level2">
+<h2>DRY WIT</h2>
+<ul>
+<li><strong>D</strong>on’t <strong>R</strong>epeat <strong>Y</strong>ourself
+<ul>
+<li>Script/automate</li>
+<li>Use functions</li>
+</ul></li>
+<li><strong>W</strong>rite <strong>I</strong>t <strong>D</strong>own
+<ul>
+<li>It = what you did and how</li>
+<li>In a form someone else can make use of</li>
+</ul></li>
+</ul>
+
+<aside><div>
+<p>Your time and others’ is valuable.</p>
+</div></aside></section>
 <section id="section" class="slide level2" data-background-image="img/OneRingtoRuleThemAll-6x4.jpg" data-background-size="contain">
 <h2></h2>
 </section>
@@ -344,52 +395,130 @@
 <li>Many outputs…</li>
 </ul>
 </section></section>
-<section id="examples" class="title-slide slide level1 center">
-<h1>Examples</h1>
-<ul>
-<li>Web-based research protocol</li>
-<li>Project web site</li>
-<li>Data wrangling, visualization</li>
-<li>Presentations</li>
-<li>Handouts</li>
-<li>Manuscripts</li>
-<li>HTML, PDF, DOCX, PPT, etc</li>
-</ul>
-</section>
-
+<section>
 <section id="background" class="title-slide slide level1 center">
 <h1>Background</h1>
+
+</section>
+<section id="what-is-r-markdown" class="slide level2">
+<h2>What is R Markdown?</h2>
 <ul>
-<li>What is R Markdown?</li>
-<li>What is Quarto?</li>
-<li>Scriptable data analyses/workflows
+<li>R Markdown <span class="citation" data-cites="allaire_et_al xie_allaire_grolemund xie_dervieux_riederer">(<a href="#/ref-allaire_et_al" role="doc-biblioref" onclick="return false;">Allaire et al., 2023</a>; <a href="#/ref-xie_allaire_grolemund" role="doc-biblioref" onclick="return false;">Xie, Allaire, &amp; Grolemund, 2018</a>; <a href="#/ref-xie_dervieux_riederer" role="doc-biblioref" onclick="return false;">Xie, Dervieux, &amp; Riederer, 2020</a>)</span></li>
+<li>Suite of R <span class="citation" data-cites="r-lang">(<a href="#/ref-r-lang" role="doc-biblioref" onclick="return false;">R Core Team, 2023</a>)</span> packages that support “literate programming” <span class="citation" data-cites="Knuth1984-ot">(<a href="#/ref-Knuth1984-ot" role="doc-biblioref" onclick="return false;">Knuth, 1984</a>)</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH1/merlin_148126767_cd44bb13-bc4d-4eeb-b1b7-73cc4dc174e7-superJumbo.jpg?quality=75&amp;auto=webp"></p>
+<p></p><figcaption aria-hidden="true">Donald Knuth <span class="citation" data-cites="Roberts2018-rz">(<a href="#/ref-Roberts2018-rz" role="doc-biblioref" onclick="return false;">Roberts, 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained…</p>
+</blockquote>
+<p><span class="citation" data-cites="knuth_undated-mi">(<a href="#/ref-knuth_undated-mi" role="doc-biblioref" onclick="return false;">Knuth, n.d.</a>)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH1/merlin_148126767_cd44bb13-bc4d-4eeb-b1b7-73cc4dc174e7-superJumbo.jpg?quality=75&amp;auto=webp"></p>
+<p></p><figcaption aria-hidden="true">Donald Knuth <span class="citation" data-cites="Roberts2018-rz">(<a href="#/ref-Roberts2018-rz" role="doc-biblioref" onclick="return false;">Roberts, 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>…and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.</p>
+</blockquote>
+<p><span class="citation" data-cites="knuth_undated-mi">(<a href="#/ref-knuth_undated-mi" role="doc-biblioref" onclick="return false;">Knuth, n.d.</a>)</span></p>
+</div>
+</div>
+</section>
+<section id="dont-worry" class="slide level2">
+<h2>Don’t worry</h2>
+<div>
 <ul>
-<li>R</li>
-<li>SPSS syntax</li>
+<li class="fragment"><p>You don’t have to be a programmer, or a good programmer, to use these tools!</p></li>
+<li class="fragment"><p>But using them will probably inspire you to become a programmer or a better one.</p></li>
+<li class="fragment"><p>And you don’t have to use R. The tools support other languages<sup>1</sup>.</p></li>
+<li class="fragment"><p>“<em>The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.</em>” <span class="citation" data-cites="knuth_undated-mi">(<a href="#/ref-knuth_undated-mi" role="doc-biblioref" onclick="return false;">Knuth, n.d.</a>)</span></p></li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>bash, JavaScript, mysql, octave, ruby, sas, stata, fortran, python, etc.</p></li></ol></aside></section>
+<section id="section-1" class="slide level2" data-background-iframe="https://quarto.org/">
+<h2></h2>
+</section>
+<section id="scripted-data-analysesworkflows" class="slide level2">
+<h2>Scripted data analyses/workflows</h2>
+<ul>
 <li>vs.&nbsp;point and click</li>
-</ul></li>
-<li>Tools to share analyses, other information alongside research (open science/sharing tool)</li>
-</ul>
-</section>
-
-<section>
-<section id="words-to-live-by" class="title-slide slide level1 center">
-<h1>Words to live by</h1>
-
-</section>
-<section id="dry-wit" class="slide level2">
-<h2>DRY WIT</h2>
+<li>Points and clicks can be hard to reproduce
 <ul>
-<li>Don’t repeat yourself</li>
-<li><strong>W</strong>rite <strong>i</strong>t <strong>d</strong>own</li>
+<li>SPSS graphic user interface (GUI) vs.&nbsp;syntax</li>
+</ul></li>
+<li>Computers do <em>exactly</em> what you tell them to do…
+<ul>
+<li>if you speak their language</li>
+</ul></li>
 </ul>
+</section>
+<section id="markdown" class="slide level2">
+<h2><a href="https://www.markdownguide.org">Markdown</a></h2>
+<ul>
+<li>Write human-readable text documents
+<ul>
+<li>Words, images, videos, web links</li>
+</ul></li>
+<li>Convert to computer-readable documents (.html, .pdf, .docx, .pptx)</li>
+<li><a href="https://rmarkdown.rstudio.com">R Markdown</a> adds <em>executable computer code</em></li>
+</ul>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
 </section></section>
+<section>
+<section id="case-studies" class="title-slide slide level1 center">
+<h1>Case studies</h1>
+
+</section>
+<section id="electronic-notebook" class="slide level2">
+<h2>Electronic notebook</h2>
+</section>
+<section id="research-protocol" class="slide level2">
+<h2>Research protocol</h2>
+</section>
+<section id="data-cleaningwrangling-report" class="slide level2">
+<h2>Data cleaning/wrangling report</h2>
+</section>
+<section id="presentation" class="slide level2">
+<h2>Presentation</h2>
+</section>
+<section id="project-website" class="slide level2">
+<h2>Project website</h2>
+</section>
+<section id="books" class="slide level2">
+<h2>Books</h2>
+</section></section>
+<section id="next-steps" class="title-slide slide level1 center">
+<h1>Next steps</h1>
+
+</section>
+
 <section>
 <section id="understanding-r-markdown" class="title-slide slide level1 center">
 <h1>Understanding R Markdown</h1>
 
 </section>
-<section id="what-is-r-markdown" class="slide level2">
+<section id="what-is-r-markdown-1" class="slide level2">
 <h2>What is R Markdown?</h2>
 <ul>
 <li>R Markdown is a file format for making dynamic documents using R. An R Markdown document is written in markdown (an plain text format) and contains chunks of embedded R code</li>
@@ -546,18 +675,52 @@
 </section>
 <section id="quarto" class="slide level2">
 <h2>Quarto</h2>
-<p>This talk was prepared using Quarto.</p>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+<p>This talk was prepared using <a href="https://quarto.org">Quarto</a>. Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+</section>
+<section id="rstudio" class="slide level2">
+<h2>RStudio</h2>
+<p><a href="https://posit.co/products/open-source/rstudio/">RStudio</a> is an integrated development environment (IDE) for R and Python.<br>
+It is a free and open source software program provided by <a href="https://posit.co">Posit</a>.</p>
 </section>
 <section id="github" class="slide level2">
 <h2>GitHub</h2>
 <p>The files are rendered into a web site that is hosted on GitHub <a href="https://github.com" class="uri">https://github.com</a>.</p>
 <p>GitHub is a web service for sharing computer code. It has a “pages” feature that also allows the (free) hosting of simple websites.</p>
 <p>GitHub supports <code>git</code>, a computer program used to put documents under version control.</p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
 <div class="footer footer-default">
 
 </div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-allaire_et_al" class="csl-entry" role="doc-biblioentry">
+Allaire, J., Xie, Y., Dervieux, C., McPherson, J., Luraschi, J., Ushey, K., … Iannone, R. (2023). <em>Rmarkdown: Dynamic documents for r</em>. Retrieved from <a href="https://github.com/rstudio/rmarkdown">https://github.com/rstudio/rmarkdown</a>
+</div>
+<div id="ref-Goodman2016-fi" class="csl-entry" role="doc-biblioentry">
+Goodman, S. N., Fanelli, D., &amp; Ioannidis, J. P. A. (2016). What does research reproducibility mean? <em>Science Translational Medicine</em>, <em>8</em>(341), 341ps12–341ps12. <a href="https://doi.org/10.1126/scitranslmed.aaf5027">https://doi.org/10.1126/scitranslmed.aaf5027</a>
+</div>
+<div id="ref-knuth_undated-mi" class="csl-entry" role="doc-biblioentry">
+Knuth, D. E. (n.d.). Literate programming. <a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html" class="uri">https://www-cs-faculty.stanford.edu/~knuth/lp.html</a>. Retrieved from <a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">https://www-cs-faculty.stanford.edu/~knuth/lp.html</a>
+</div>
+<div id="ref-Knuth1984-ot" class="csl-entry" role="doc-biblioentry">
+Knuth, D. E. (1984). Literate programming. <em>Computer Journal</em>, <em>27</em>(2), 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>
+</div>
+<div id="ref-r-lang" class="csl-entry" role="doc-biblioentry">
+R Core Team. (2023). <em>R: A language and environment for statistical computing</em>. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+</div>
+<div id="ref-Roberts2018-rz" class="csl-entry" role="doc-biblioentry">
+Roberts, S. (2018). The yoda of silicon valley. <em>The New York Times</em>. Retrieved from <a href="https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html">https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html</a>
+</div>
+<div id="ref-xie_allaire_grolemund" class="csl-entry" role="doc-biblioentry">
+Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). <em>R markdown: The definitive guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. Retrieved from <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>
+</div>
+<div id="ref-xie_dervieux_riederer" class="csl-entry" role="doc-biblioentry">
+Xie, Y., Dervieux, C., &amp; Riederer, E. (2020). <em>R markdown cookbook</em>. Boca Raton, Florida: Chapman; Hall/CRC. Retrieved from <a href="https://bookdown.org/yihui/rmarkdown-cookbook">https://bookdown.org/yihui/rmarkdown-cookbook</a>
+</div>
+</div>
 </section></section>
+
     </div>
   </div>
 
