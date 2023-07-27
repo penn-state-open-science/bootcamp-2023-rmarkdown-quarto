@@ -46,7 +46,6 @@ Your time and others' is valuable.
 - Transparent, reproducible, version-controlled
 - Many outputs...
 
-# Examples
 
 
 # Background
