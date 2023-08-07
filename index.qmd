@@ -49,6 +49,9 @@ Your time and others' is valuable.
 
 
 # Background
+## What is R Markdown?
+  -  R Markdown is a file format for making dynamic documents using R. An R Markdown document is written in markdown (an plain text format) and contains chunks of embedded R code
+  - Explicitly links your data with your code and output creating a fully reproducible workflow
 
 ## What is R Markdown?
 
@@ -111,6 +114,8 @@ Your time and others' is valuable.
 
 ## {background-iframe="https://quarto.org/"}
 
+# Scriptable Data Analyses/Workflows vs. "Point and Click"
+
 ## Scripted data analyses/workflows
 
 - vs. point and click
@@ -146,9 +151,7 @@ Your time and others' is valuable.
 
 # Understanding R Markdown
 
-## What is R Markdown?
-  -  R Markdown is a file format for making dynamic documents using R. An R Markdown document is written in markdown (an plain text format) and contains chunks of embedded R code
-  - Explicitly links your data with your code and output creating a fully reproducible workflow
+
   
 ## Why use R Markdown?
 1. Reproducible Research
@@ -196,7 +199,6 @@ Your time and others' is valuable.
   - Collaborating with colleagues in a shared repository
   - Sharing R Markdown reports with the community
 
-# Scriptable Data Analyses/Workflows vs. "Point and Click"
 
 ## Benefit of using coding languages like R
 - **Reproducibility**
