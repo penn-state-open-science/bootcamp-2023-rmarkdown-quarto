@@ -208,7 +208,7 @@ Your time and others' is valuable.
 
 - Manual data manipulation is prone to human error.
 - Limited scripting capabilities.
-- Vendor lock-in (\$\$\$$!) and dependency on the software's availability and updates.
+- Vendor lock-in (\$\$\$!) and dependency on the software's availability and updates.
 - Outputs lack visibility into the underlying code and calculations.
 
 ---
@@ -216,21 +216,24 @@ Your time and others' is valuable.
 - Difficult to assess the validity of results without access to the analysis steps.
   - Large-Scale projects present a challenge.
   - Difficult to maintain consistency and reproducibility over time.
-  
-## Use cases
 
-1. Reproducible Research
-2. [Data Analysis and Reporting](https://github.com/gilmore-lab/sex-differences-project)
-3. Scientific Reports and Papers
-4. [Presentations](https://github.com/penn-state-open-science/bootcamp-2023-rmarkdown-quarto/)
-5. Dashboards and [Websites](https://github.com/penn-state-open-science/bootcamp-2023)
-6. [Books](https://bookdown.org) and [Manuals](https://databrary.github.io/analytics/weekly.html)
+## Using R Markdown you can create:
 
----
+- Readable documents
+- Dashboards
+- Interactive documents
+- Presentations
+- Books
+- Websites and more!
 
-7. Automated Reporting
-8. Academic Notebooks
-9. Interactive Data Exploration
+## {background-iframe="https://rmarkdown.rstudio.com/gallery.html" background-interactive=true}
+
+## Specific use cases
+
+- [Data Analysis](https://github.com/gilmore-lab/sex-differences-project)
+- [Presentations](https://github.com/penn-state-open-science/bootcamp-2023-rmarkdown-quarto/)
+- [Websites](https://github.com/penn-state-open-science/bootcamp-2023)
+- [Reports](https://databrary.github.io/analytics/weekly.html)
 
 ## What can *you* make with R Markdown/Quarto?
 
