@@ -135,7 +135,7 @@ A **really** important point^[I mean really]
 ```
 ## Methods
 
-$$$1+1=2$$
+$$1+1=2$$
 
 | Letters | Numbers |
 |--------:|:-------:|
