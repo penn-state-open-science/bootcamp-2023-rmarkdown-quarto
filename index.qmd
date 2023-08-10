@@ -5,6 +5,7 @@ author: ["Rick Gilmore", "Jennifer Valcin"]
 institute: ["Psychology/CSC", "PSU Libraries"]
 bibliography: bib/refs.bib
 csl: bib/apa.csl
+css: styles.css
 format: 
   revealjs:
     theme: simple
@@ -112,12 +113,61 @@ Your time and others' is valuable.
 
 ## {background-iframe="https://quarto.org/"}
 
-<!-- ## [Markdown](https://www.markdownguide.org) -->
+## [Markdown](https://www.markdownguide.org)
 
-<!-- - Write human-readable text documents -->
-<!--     - Words, images, videos, web links -->
-<!-- - Convert to computer-readable documents (.html, .pdf, .docx, .pptx) -->
-<!-- - [R Markdown](https://rmarkdown.rstudio.com) adds *executable computer code* -->
+- Write human-readable text documents
+    - Words, images, videos, web links
+- Convert to computer-readable documents (.html, .pdf, .docx, .pptx)
+
+---
+
+```
+# My brilliant report
+
+*Rick Gilmore*
+
+## Introduction
+
+A **really** important point^[I mean really]
+
+## Methods
+
+$$$1+1=2$$
+
+| Letters | Numbers |
+|--------:|:-------:|
+| A      | 1      |
+| B      | 2      |
+
+[Best Bootcamp Evah!](https://penn-state-open-science.github.io/bootcamp-2023/)
+
+![https://imgs.xkcd.com/comics/free_fallin.png](https://imgs.xkcd.com/comics/free_fallin.png)
+```
+
+---
+
+<iframe width=800px height=700 src="brilliant.html">
+</iframe>
+
+<p style="text-align:center;">
+<https://quarto.org/docs/authoring/markdown-basics.html>
+</p>
+
+## [R Markdown](https://rmarkdown.rstudio.com) 
+
+- adds *executable computer code* in chunks
+
+```r
+x <- 1 + 1
+x
+```
+
+```{r}
+x <- 1 + 1
+x
+```
+
+- In *multiple* languages
 
 ## Benefits of using R Markdown for Open Science
 
@@ -228,12 +278,14 @@ Your time and others' is valuable.
 
 ## {background-iframe="https://rmarkdown.rstudio.com/gallery.html" background-interactive=true}
 
-## Specific use cases
+## Specific use cases (ROG)
 
 - [Data Analysis](https://github.com/gilmore-lab/sex-differences-project)
 - [Presentations](https://github.com/penn-state-open-science/bootcamp-2023-rmarkdown-quarto/)
 - [Websites](https://github.com/penn-state-open-science/bootcamp-2023)
 - [Reports](https://databrary.github.io/analytics/weekly.html)
+- [Data wrangling](https://PLAY-behaviorome.github.io/KoBoToolbox/)
+- [Course website & slides](https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/)
 
 ## What can *you* make with R Markdown/Quarto?
 
