@@ -130,6 +130,9 @@ Your time and others' is valuable.
 
 A **really** important point^[I mean really]
 
+```
+
+```
 ## Methods
 
 $$$1+1=2$$
@@ -139,6 +142,9 @@ $$$1+1=2$$
 | A      | 1      |
 | B      | 2      |
 
+```
+
+```
 [Best Bootcamp Evah!](https://penn-state-open-science.github.io/bootcamp-2023/)
 
 ![https://imgs.xkcd.com/comics/free_fallin.png](https://imgs.xkcd.com/comics/free_fallin.png)
@@ -291,7 +297,9 @@ x
 
 - Use R? Consider RStudio.
 - Use Python or other language? Consider VS Code or RStudio.
-- Quarto Qrew
+- Use SPSS? You can still use the tools to *document* (but not execute) your workflow.
+- [Quarto Qrew](https://github.com/penn-state-open-science/quarto-qrew/)
+- University Libraries workshops this fall
 
 ## What can *you* make with R Markdown/Quarto?
 
