@@ -287,6 +287,12 @@ x
 - [Data wrangling](https://PLAY-behaviorome.github.io/KoBoToolbox/)
 - [Course website & slides](https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/)
 
+## How to start
+
+- Use R? Consider RStudio.
+- Use Python or other language? Consider VS Code or RStudio.
+- Quarto Qrew
+
 ## What can *you* make with R Markdown/Quarto?
 
 # Resources
